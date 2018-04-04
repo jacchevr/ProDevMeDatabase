@@ -4,7 +4,7 @@ import edu.cnm.deepdive.database.models.Document;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-@RepositoryRestResource(collectionResourceRel = "document", path = "document")
+@RepositoryRestResource(collectionResourceRel = "documents", path = "documents")
 public interface DocumentRepository extends PagingAndSortingRepository<Document, Long> {
 
 }
