@@ -11,7 +11,7 @@ import javax.persistence.TemporalType;
 import org.hibernate.annotations.CreationTimestamp;
 
 @Entity
-public class User {
+public class UserModel {
 
   @Id
   @GeneratedValue

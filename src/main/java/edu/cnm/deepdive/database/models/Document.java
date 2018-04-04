@@ -9,6 +9,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import org.apache.catalina.User;
 import org.hibernate.annotations.CreationTimestamp;
 
 @Entity
@@ -18,7 +19,9 @@ public class Document {
   @GeneratedValue
     private long id;
 
-    private long userId;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "user_id", nullable = true)
+    private UserModel userModel;
 
     private long resumeGrade;
 
@@ -68,9 +71,9 @@ public class Document {
       this.resume = resume;
     }
 
-    public long getUserId() { return userId; }
+    public UserModel getUserModel() { return userModel; }
 
-    public void setUserId(long userId) { this.userId = userId; }
+    public void setUserModel(UserModel userModel) { this.userModel = userModel; }
 
     public long getResumeGrade() {
     return resumeGrade;
