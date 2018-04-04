@@ -5,13 +5,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Profession {
+public class Keyword {
 
   @Id
   @GeneratedValue
   private long id;
 
-  private String profession;
+  private String keyword;
 
   public long getId() {
     return id;
@@ -21,14 +21,15 @@ public class Profession {
     this.id = id;
   }
 
-  public String getProfession() {
-    return profession;
+  public String getKeyword() {
+    return keyword;
   }
 
-  public void setProfession(String profession) {
-    this.profession = profession;
+  public void setKeyword(String keyword) {
+    this.keyword = keyword;
   }
 
   @Override
-  public String toString() { return profession;}
+  public String toString() { return keyword;}
 }
+
