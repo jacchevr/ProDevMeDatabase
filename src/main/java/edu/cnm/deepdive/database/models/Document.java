@@ -36,8 +36,6 @@ public class Document {
 
     private String resume;
 
-    private String coverLetter;
-
     public long getId() {
       return id;
     }
@@ -68,14 +66,6 @@ public class Document {
 
     public void setResume(String resume) {
       this.resume = resume;
-    }
-
-    public String getCoverLetter() {
-      return coverLetter;
-    }
-
-    public void setCoverLetter(String coverLetter) {
-      this.coverLetter = coverLetter;
     }
 
     public long getUserId() { return userId; }
