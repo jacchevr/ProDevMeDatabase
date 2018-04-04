@@ -10,16 +10,16 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
 @Entity
-public class Profession {
+public class Industry {
 
   @Id
   @GeneratedValue
   private long id;
 
-  private String profession;
+  private String industry;
 
   @ManyToMany
-  @JoinTable(name = "PROFESSION_KEYWORD", joinColumns = {@JoinColumn(name = "profession_id")},
+  @JoinTable(name = "INDUSTRY_KEYWORD", joinColumns = {@JoinColumn(name = "industry_id")},
       inverseJoinColumns = {@JoinColumn(name = "keyword_id")})
   private Set<Keyword> keywords = new HashSet<>();
 
@@ -35,14 +35,14 @@ public class Profession {
     this.id = id;
   }
 
-  public String getProfession() {
-    return profession;
+  public String getIndustry() {
+    return industry;
   }
 
-  public void setProfession(String profession) {
-    this.profession = profession;
+  public void setIndustry(String industry) {
+    this.industry = industry;
   }
 
   @Override
-  public String toString() { return profession;}
+  public String toString() { return industry;}
 }

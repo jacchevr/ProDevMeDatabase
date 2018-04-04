@@ -2,9 +2,13 @@ package edu.cnm.deepdive.database.models;
 
 
 
+import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import org.hibernate.annotations.CreationTimestamp;
 
 @Entity
 public class User {
@@ -16,6 +20,10 @@ public class User {
   private String lastName;
 
   private String firstName;
+
+  @CreationTimestamp
+  @Temporal(TemporalType.TIMESTAMP)
+  private Date created;
 
   public long getId() {
     return id;
