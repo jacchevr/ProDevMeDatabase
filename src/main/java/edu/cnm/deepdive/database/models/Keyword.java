@@ -19,6 +19,18 @@ public class Keyword {
   @ManyToMany(mappedBy = "keywords")
   private Set<Industry> industries = new HashSet<>();
 
+  @ManyToMany(mappedBy = "keywords")
+  private Set<Profession> professions = new HashSet<>();
+
+
+  public Set<Industry> getIndustries() {
+    return industries;
+  }
+
+  public Set<Profession> getProfessions() {
+    return professions;
+  }
+
   public long getId() {
     return id;
   }
