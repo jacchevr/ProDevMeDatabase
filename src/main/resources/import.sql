@@ -19,3 +19,4 @@ INSERT INTO Profession (ID, PROFESSION) VALUES (18, 'support specialist');
 INSERT INTO Profession (ID, PROFESSION) VALUES (19, 'financial advisor');
 INSERT INTO Industry (ID, INDUSTRY) VALUES (20, 'information technology');
 INSERT INTO Industry (ID, INDUSTRY) VALUES (21, 'business');
+INSERT INTO USER_MODEL (ID, EMAIL) VALUES (22, 'j@el-coder.com')
