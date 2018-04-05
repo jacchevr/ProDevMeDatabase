@@ -22,6 +22,15 @@ public class Keyword {
   @ManyToMany(mappedBy = "keywords")
   private Set<Profession> professions = new HashSet<>();
 
+  private long score;
+
+  public long getScore() {
+    return score;
+  }
+
+  public void setScore(long score) {
+    this.score = score;
+  }
 
   public Set<Industry> getIndustries() {
     return industries;

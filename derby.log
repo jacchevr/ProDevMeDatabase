@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Wed Apr 04 11:49:52 MDT 2018:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-0162-91c7-79b8-00000556f5e0 
-on database directory memory:/Users/jacqueschevrier/Desktop/bootcamp/projects/ProDevMeDatabase/testdb with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Thu Apr 05 15:08:03 MDT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-0162-97a3-4a4f-0000072bc408 
+on database directory /Users/jacqueschevrier/Desktop/bootcamp/projects/ProDevMeDatabase/prodeveme_db with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
 Loaded from file:/Users/jacqueschevrier/.m2/repository/org/apache/derby/derby/10.14.1.0/derby-10.14.1.0.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_162-b12
